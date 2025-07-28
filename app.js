@@ -14,7 +14,7 @@ const port = process.env.PORT || 4000;
 
 // CORS
 
-app.use(cors());
+app.use(cors({ origin: "*" }));
 
 // middleware
 //  cors
