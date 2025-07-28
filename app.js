@@ -12,6 +12,10 @@ const app = express();
 // define the port
 const port = process.env.PORT || 4000;
 
+// CORS
+
+app.use(cors());
+
 // middleware
 //  cors
 app.use(express.json());
